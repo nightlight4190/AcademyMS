@@ -21,8 +21,7 @@ class NavDrawer extends StatelessWidget {
              ),
            ),
            decoration: BoxDecoration(
-             color:  Color.fromRGBO(216, 240, 253, 1),
-             borderRadius: BorderRadius.all(Radius.circular(40,),),
+             color:   Color.fromARGB(255, 204, 210, 213), 
            ),
          ),
 
@@ -30,9 +29,10 @@ class NavDrawer extends StatelessWidget {
 
           ListTile(
             shape: border,
-            tileColor: const Color.fromRGBO(216, 240, 253, 1), 
+            tileColor: const Color.fromARGB(255, 204, 210, 213), 
             leading: const Icon(Icons.home),
-            title: const Text("Home"),
+            title:  Text("Home",
+            style: Theme.of(context).textTheme.bodyMedium),
             onTap: () {},
           ),
 
@@ -40,9 +40,10 @@ class NavDrawer extends StatelessWidget {
 
           ListTile(
             shape: border,
-            tileColor: const Color.fromRGBO(216, 240, 253, 1), 
+            tileColor: const Color.fromARGB(255, 204, 210, 213), 
             leading: const Icon(Icons.school),
-            title: const Text("My Courses"),
+            title:  Text("My Courses",
+             style: Theme.of(context).textTheme.bodyMedium),
             onTap: () {},
           ),
 
@@ -50,9 +51,10 @@ class NavDrawer extends StatelessWidget {
 
           ListTile(
             shape:border,
-            tileColor: const Color.fromRGBO(216, 240, 253, 1), 
+            tileColor: const Color.fromARGB(255, 204, 210, 213), 
             leading: const Icon(Icons.assignment),
-            title: const Text("Assignment Log"),
+            title:  Text("Assignment Log",
+             style: Theme.of(context).textTheme.bodyMedium),
             onTap: () {},
           ),
 
@@ -60,19 +62,34 @@ class NavDrawer extends StatelessWidget {
 
           ListTile(
             shape: border,
-            tileColor: const Color.fromRGBO(216, 240, 253, 1), 
-            leading: const Icon(Icons.schedule),
-            title: const Text("Schedule"),
+            tileColor: const Color.fromARGB(255, 204, 210, 213), 
+            leading: const Icon(Icons.schedule,
+            weight: 400,),
+            title: Text("Schedule",
+            style: Theme.of(context).textTheme.bodyMedium),
             onTap: () {},
           ),
 
            const SizedBox(height: 15),
 
+           ListTile(
+            shape: border,
+            tileColor:const Color.fromARGB(255, 204, 210, 213), 
+            leading: const Icon(Icons.group),
+            title:  Text("Attendence",
+             style: Theme.of(context).textTheme.bodyMedium),
+            onTap: () {},
+          ),
+          
+           const SizedBox(height: 15),
+
           ListTile(
             shape: border,
-            tileColor: const Color.fromRGBO(216, 240, 253, 1), 
+            tileColor: const Color.fromARGB(255, 204, 210, 213), 
             leading: const Icon(Icons.chat),
-            title: const Text("Chat"),
+            title:  Text("Chat",
+             style: Theme.of(context).textTheme.bodyMedium),
+            
             onTap: () {},
           ),
 
@@ -80,9 +97,10 @@ class NavDrawer extends StatelessWidget {
 
           ListTile(
             shape: border,
-            tileColor: const Color.fromRGBO(216, 240, 253, 1), 
+            tileColor: const Color.fromARGB(255, 204, 210, 213), 
             leading: const Icon(Icons.grading),
-            title: const Text("Reports"),
+            title:  Text("Reports",
+             style: Theme.of(context).textTheme.bodyMedium),
             onTap: () {},
           ),
 
@@ -90,9 +108,10 @@ class NavDrawer extends StatelessWidget {
 
            ListTile(
             shape: border,
-            tileColor: const Color.fromRGBO(216, 240, 253, 1), 
+            tileColor: const Color.fromARGB(255, 204, 210, 213), 
             leading: const Icon(Icons.settings),
-            title: const Text("Settings"),
+            title:  Text("Settings",
+             style: Theme.of(context).textTheme.bodyMedium),
             onTap: () {},
           ),
 

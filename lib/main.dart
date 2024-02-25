@@ -23,6 +23,10 @@ class MyApp extends StatelessWidget {
             titleMedium: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20,
+            ),
+            bodyMedium: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 16,
             )
           ),
        ),  
