@@ -34,16 +34,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
-
-
-// void main(){
-//   runApp(MaterialApp(
-//     debugShowCheckedModeBanner: false,
-//     initialRoute: 'login',
-//     routes: {
-//       'login':(context)=> const MySignin()
-//     } ,
-//   ));
-// }

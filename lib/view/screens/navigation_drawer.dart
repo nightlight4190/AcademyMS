@@ -26,7 +26,6 @@ class NavDrawer extends StatelessWidget {
            decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
             color: Theme.of(context).colorScheme.primary,
-
            ),
          ),
 
