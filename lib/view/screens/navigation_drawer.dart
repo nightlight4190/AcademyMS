@@ -5,87 +5,91 @@ class NavDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     final border =  RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(20),
             );
+
     return  Drawer(
+      backgroundColor: const Color.fromRGBO(	233, 243, 245, 1),
       child: ListView(
         padding:  const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
         children:  [
-         const UserAccountsDrawerHeader(
-           accountName: Text("Asis"), 
-           accountEmail:  Text("ask@gmail.com"),
-           currentAccountPicture: CircleAvatar(
+          UserAccountsDrawerHeader(
+           accountName: const Text("Asis"), 
+           accountEmail: const Text("ask@gmail.com"),
+           currentAccountPicture: const CircleAvatar(
              child: ClipOval(
                child:Icon(Icons.account_circle_rounded),
              ),
            ),
            decoration: BoxDecoration(
-             color:   Color.fromARGB(255, 204, 210, 213), 
+            borderRadius: BorderRadius.circular(30),
+            color: Theme.of(context).colorScheme.primary,
+
            ),
          ),
 
-          const SizedBox(height: 15),
+        const SizedBox(height: 40),
 
           ListTile(
             shape: border,
-            tileColor: const Color.fromARGB(255, 204, 210, 213), 
+            tileColor:Theme.of(context).colorScheme.primary,
             leading: const Icon(Icons.home),
             title:  Text("Home",
             style: Theme.of(context).textTheme.bodyMedium),
             onTap: () {},
           ),
 
-          const SizedBox(height: 15),
+          const SizedBox(height: 20),
 
           ListTile(
             shape: border,
-            tileColor: const Color.fromARGB(255, 204, 210, 213), 
+            tileColor: Theme.of(context).colorScheme.primary,  
             leading: const Icon(Icons.school),
             title:  Text("My Courses",
              style: Theme.of(context).textTheme.bodyMedium),
             onTap: () {},
           ),
 
-          const SizedBox(height: 15),
+          const SizedBox(height: 20),
 
           ListTile(
             shape:border,
-            tileColor: const Color.fromARGB(255, 204, 210, 213), 
+            tileColor: Theme.of(context).colorScheme.primary, 
             leading: const Icon(Icons.assignment),
             title:  Text("Assignment Log",
              style: Theme.of(context).textTheme.bodyMedium),
             onTap: () {},
           ),
 
-          const SizedBox(height: 15),
+          const SizedBox(height: 20),
 
           ListTile(
             shape: border,
-            tileColor: const Color.fromARGB(255, 204, 210, 213), 
-            leading: const Icon(Icons.schedule,
-            weight: 400,),
+            tileColor:Theme.of(context).colorScheme.primary,
+            leading: const Icon(Icons.calendar_month_rounded),
             title: Text("Schedule",
             style: Theme.of(context).textTheme.bodyMedium),
             onTap: () {},
           ),
 
-           const SizedBox(height: 15),
+           const SizedBox(height: 20),
 
            ListTile(
             shape: border,
-            tileColor:const Color.fromARGB(255, 204, 210, 213), 
+            tileColor:Theme.of(context).colorScheme.primary,
             leading: const Icon(Icons.group),
             title:  Text("Attendence",
              style: Theme.of(context).textTheme.bodyMedium),
             onTap: () {},
           ),
           
-           const SizedBox(height: 15),
+           const SizedBox(height: 20),
 
           ListTile(
             shape: border,
-            tileColor: const Color.fromARGB(255, 204, 210, 213), 
+            tileColor: Theme.of(context).colorScheme.primary,
             leading: const Icon(Icons.chat),
             title:  Text("Chat",
              style: Theme.of(context).textTheme.bodyMedium),
@@ -93,22 +97,22 @@ class NavDrawer extends StatelessWidget {
             onTap: () {},
           ),
 
-           const SizedBox(height: 15),
+           const SizedBox(height: 20),
 
           ListTile(
             shape: border,
-            tileColor: const Color.fromARGB(255, 204, 210, 213), 
-            leading: const Icon(Icons.grading),
+            tileColor: Theme.of(context).colorScheme.primary,
+            leading: const Icon(Icons.leaderboard),
             title:  Text("Reports",
              style: Theme.of(context).textTheme.bodyMedium),
             onTap: () {},
           ),
-
-          const SizedBox(height: 15),
+          
+          const SizedBox(height: 20),
 
            ListTile(
             shape: border,
-            tileColor: const Color.fromARGB(255, 204, 210, 213), 
+            tileColor: Theme.of(context).colorScheme.primary,
             leading: const Icon(Icons.settings),
             title:  Text("Settings",
              style: Theme.of(context).textTheme.bodyMedium),

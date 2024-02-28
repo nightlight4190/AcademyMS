@@ -15,11 +15,14 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
+      
       child: Scaffold(
-        backgroundColor: const Color.fromARGB(255, 51, 56, 61),
+        backgroundColor: const Color.fromRGBO(	233, 243, 245, 1),
+
         appBar: AppBar(
-          title: const Text("Home"),
-          backgroundColor: const Color.fromARGB(255, 148, 164, 180),
+          title:  Text("Home",
+          style: Theme.of(context).textTheme.titleMedium,),
+         backgroundColor: const Color.fromRGBO(	233, 243, 245, 1),
         ),
         drawer: const NavDrawer(),
 
@@ -31,6 +34,9 @@ class _HomeScreenState extends State<HomeScreen> {
               return CourseCard(
                 title: course['title'] as String,
                 image: course['imageUrl'] as String,
+                backgroundColor: index.isEven 
+                ?  const Color.fromARGB(255, 130, 139, 139) 
+                : const Color.fromARGB(255, 169, 178, 181),
               );
             }),
         ),

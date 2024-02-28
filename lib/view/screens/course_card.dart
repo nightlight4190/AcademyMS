@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 class CourseCard extends StatelessWidget {
   final String title;
   final String image;
+  final Color backgroundColor;
 
   const CourseCard({super.key,
   required this.title,
   required this.image,
+  required this.backgroundColor,
   });
 
 
@@ -15,7 +17,10 @@ class CourseCard extends StatelessWidget {
     return Container(
       margin:const EdgeInsets.all(20),
       padding: const EdgeInsets.all(16.0),
-      color: const Color.fromARGB(255, 117, 142, 155),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(30),
+        color: backgroundColor,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Poppins',
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromRGBO(254, 206, 1, 1),
-          primary: const Color.fromRGBO(254, 206, 1, 1),
+          seedColor:  const Color.fromARGB(255, 130, 139, 139), 
+          primary: const Color.fromARGB(255, 130, 139, 139), 
         ),
           textTheme: const TextTheme(
             titleMedium: TextStyle(
@@ -30,8 +30,20 @@ class MyApp extends StatelessWidget {
             )
           ),
        ),  
-       
-       home: const HomeScreen(),
+       home:  const HomeScreen(),
     );
   }
 }
+
+
+
+
+// void main(){
+//   runApp(MaterialApp(
+//     debugShowCheckedModeBanner: false,
+//     initialRoute: 'login',
+//     routes: {
+//       'login':(context)=> const MySignin()
+//     } ,
+//   ));
+// }

@@ -21,9 +21,4 @@ final courses = [
      'title': 'Digital Marketing',
      'imageUrl': 'assets/images/digital.png'
   },
-  {
-    'id':'4',
-    'title': 'SEO',
-    'imageUrl': 'assets/images/digital.png'
-  }
 ];
