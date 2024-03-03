@@ -5,17 +5,17 @@ class CourseCard extends StatelessWidget {
   final String image;
   final Color backgroundColor;
 
-  const CourseCard({super.key,
-  required this.title,
-  required this.image,
-  required this.backgroundColor,
+  const CourseCard({
+    super.key,
+    required this.title,
+    required this.image,
+    required this.backgroundColor,
   });
-
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin:const EdgeInsets.all(20),
+      margin: const EdgeInsets.all(20),
       padding: const EdgeInsets.all(16.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
@@ -24,16 +24,19 @@ class CourseCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(title,
-          style: Theme.of(context).textTheme.titleMedium,),
-
-            const SizedBox(height: 5,),
-
-         Center(
-           child: Image(image: AssetImage(image),
-           height: 175,
-           ),
-         ),
+          Text(
+            title,
+            style: Theme.of(context).textTheme.titleMedium,
+          ),
+          const SizedBox(
+            height: 5,
+          ),
+          Center(
+            child: Image(
+              image: AssetImage(image),
+              height: 175,
+            ),
+          ),
         ],
       ),
     );

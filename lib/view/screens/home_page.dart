@@ -39,7 +39,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       builder: (context){
                         return CourseEnrollmentPage(course: course);
                       },
-                  ));
+                  )
+                  );
                 },
                 child: CourseCard(
                   title: course['title'] as String,

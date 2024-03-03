@@ -26,7 +26,9 @@ class CourseEnrollmentPage extends StatelessWidget {
 
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Image.asset(course['imageUrl'] as String),
+            child: Image.asset(course['imageUrl'] as String,
+            height: 250,
+            width: double.infinity),
           ),
           const Spacer(flex: 2,),
 

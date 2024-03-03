@@ -1,4 +1,6 @@
+import 'package:ams/features/class_schedule/class_appointment.dart';
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
 
 class NavDrawer extends StatelessWidget {
   const NavDrawer({super.key});
@@ -11,7 +13,7 @@ class NavDrawer extends StatelessWidget {
             );
 
     return  Drawer(
-      backgroundColor: const Color.fromRGBO(	233, 243, 245, 1),
+      backgroundColor: Color.fromARGB(255, 226, 245, 249),
       child: ListView(
         padding:  const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
         children:  [
@@ -70,7 +72,14 @@ class NavDrawer extends StatelessWidget {
             leading: const Icon(Icons.calendar_month_rounded),
             title: Text("Schedule",
             style: Theme.of(context).textTheme.bodyMedium),
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context){
+                    var classSchedule = ClassSchedule(title: 'Class Schedule');
+                    return  classSchedule;
+              }));
+            },
           ),
 
            const SizedBox(height: 20),
